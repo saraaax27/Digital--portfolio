@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #84a6e9;
+        }
+
+        header {
+            background-color: #941919;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; /* Add this */
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color: #fff;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+            align-self: center;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Saravana Priya T</h1>
+            <p>II computer science</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Achivements">Achivements</a></li>
+            <li><a href="#resume">Resume</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2>About Me</h2>
+            <p>I'm <b>passionate about UI/UX design</b> And love creating visually appealing, user-friendly digital experiences
+          As a student at Soka Ikeda College of Arts and Science for Women, Chennai, I'm eager to learn and grow my skills in editing,designing,web technologies.I strive to improve my abilities to craft engaging digital experiences that enhance user interaction.
+</p>
+
+        </div>
+    </section>
+
+    <section id="Education">
+        <div class="section-content">
+            <h2>Education</h2>
+            <p>10th-Sethu Bhaskara </p>
+            <p>12th-Sethu Bhaskara</p>
+            <p>UG-Soka Ikeda College</p>
+            
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <ul>
+                <li>Editing</li>
+                <li>Designing</li>
+                <li>Html</li>
+                <li>Graphic Design</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="Achivements">
+        <div class="section-content">
+            <h2>Achivements</h2>
+            <ul>
+                <li><a href="#">Intercollege competitions</a></li>
+                <li><a href="#">College culturals</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Basket Ball Player</a></li>
+                <li><a href="#">Japanese</a></li> 
+                <li><a href="#">Guinness Record</a></li>
+                <li><a href="#">Kashiv info tech</a></li>                
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="Resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Resume</h2>
+            <a href="file.pdf" target="_block" class="download-button">Download CV</a>
+        </center>
+        </div>
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Saravana Priya T</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
